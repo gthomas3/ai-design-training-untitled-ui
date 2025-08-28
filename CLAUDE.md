@@ -152,11 +152,12 @@ import { Tool01, CheckCircle, Phone } from "@untitledui/icons";
 
 ## Design Assets
 
-The `src/design-assets` directory contains a comprehensive collection of design assets for creating professional landing pages:
+The `src//design-assets` directory contains a comprehensive collection of design assets for creating professional landing pages:
 
 ### Avatars (144 total)
+
 ```
-src/design-assets/avatars/
+src//design-assets/avatars/
 └── PNG (transparent background)/
     ├── Abraham Baker.png
     ├── Amelie Laurent.png
@@ -167,11 +168,12 @@ src/design-assets/avatars/
 **Usage**: High-quality placeholder user avatars for testimonials, team sections, and user profiles. All images are PNG format with transparent backgrounds for easy integration.
 
 ### Company Logos (719 total)
+
 ```
-src/design-assets/logos/
+src//design-assets/logos/
 ├── Default style/
 │   ├── Light mode/           # Standard logos for light backgrounds
-│   ├── Dark mode/            # White/light logos for dark backgrounds  
+│   ├── Dark mode/            # White/light logos for dark backgrounds
 │   ├── Light mode logomark/  # Icon-only versions for light mode
 │   └── Dark mode logomark/   # Icon-only versions for dark mode
 ├── Badge style/
@@ -189,46 +191,86 @@ src/design-assets/logos/
 ### Asset Integration Patterns
 
 **Avatars in Components**:
+
 ```typescript
 // Direct path reference
-<Avatar 
-  src="/src/design-assets/avatars/PNG (transparent background)/Amelie Laurent.png"
+<Avatar
+  src="/design-assets/avatars/PNG (transparent background)/Amelie Laurent.png"
   alt="Amelie Laurent"
-  size="xl" 
+  size="xl"
 />
 
 // For testimonials
 author: {
   name: "Sarah Johnson",
-  title: "Property Manager", 
-  avatar: "/src/design-assets/avatars/PNG (transparent background)/Sarah Johnson.png"
+  title: "Property Manager",
+  avatar: "/design-assets/avatars/PNG (transparent background)/Sarah Johnson.png"
 }
 ```
 
 **Logos in Components**:
+
 ```typescript
 // Light mode company logo
-<img 
-  src="/src/design-assets/logos/Default style/Light mode/Boltshift.svg"
+<img
+  src="/design-assets/logos/Default style/Light mode/Boltshift.svg"
   alt="Boltshift"
-  className="h-8 dark:hidden" 
+  className="h-8 dark:hidden"
 />
 
-// Dark mode company logo  
+// Dark mode company logo
 <img
-  src="/src/design-assets/logos/Default style/Dark mode/Boltshift.svg"
-  alt="Boltshift" 
+  src="/design-assets/logos/Default style/Dark mode/Boltshift.svg"
+  alt="Boltshift"
   className="h-8 opacity-85 not-dark:hidden"
 />
 ```
 
 **Responsive Logo Usage**:
+
 - Use **Default style** for main branding and social proof sections
 - Use **Badge style** for compact spaces and navigation
 - Use **Avatar company logos** for team company affiliations
 - Always provide both light and dark mode variants
 
+**🚨 CRITICAL - Custom Logo Requirement**:
+**NEVER use the default Untitled UI logo in website headers and footers**. Every new website MUST:
+
+1. **Use LOGOMARK versions only** from these specific folders:
+   - `src/design-assets/logos/Default style/Light mode logomark/` (for light backgrounds)
+   - `src/design-assets/logos/Default style/Dark mode logomark/` (for dark backgrounds)
+   - **DO NOT use** the `Light mode` or `Dark mode` folders as they contain text with the logo
+   
+2. **Add custom company name text** next to the logomark that matches the website's:
+    - Color scheme and brand palette
+    - Industry and business type
+    - Overall design aesthetic
+    - This gives the appearance of a fully custom logo
+   
+3. **Replace ALL instances** of the default logo in:
+    - Header navigation components
+    - Footer components
+    - Any branding sections
+
+3. **Logo Selection Guidelines**:
+    - **Construction/Building**: Choose logos with strong, geometric shapes (e.g., Boltshift, Catalyst)
+    - **Technology/AI**: Choose modern, tech-focused logos (e.g., ContrastAI, Lightbox, Command+R)
+    - **Food/Restaurant**: Choose organic, friendly logos (e.g., Flora&Fauna, Goodwell, Magnolia)
+    - **Finance/Business**: Choose professional, trustworthy logos (e.g., Sisyphus, Capsule, Layers)
+
+4. **Implementation Pattern**:
+
+```typescript
+// ❌ WRONG - Never use default logo
+<UntitledLogo className="h-8" />
+
+// ✅ CORRECT - Use selected logo from design assets
+<img alt="Company Name" src="/design-assets/logos/Default style/Light mode/ChosenLogo.svg" className="h-8 dark:hidden" />
+<img alt="Company Name" src="/design-assets/logos/Default style/Dark mode/ChosenLogo.svg" className="h-8 opacity-85 not-dark:hidden" />
+```
+
 **IMPORTANT - Industry-Specific Images**: When using images from Unsplash or other sources, ALWAYS ensure images accurately reflect the specific business industry the website is being created for. Use targeted, industry-relevant search terms rather than generic images. For example:
+
 - **Drywall company**: Search for "drywall installation", "construction worker", "interior construction" - NOT generic "business" or "office"
 - **Restaurant**: Search for "restaurant kitchen", "chef cooking", "dining atmosphere" - NOT generic "people working"
 - **Law firm**: Search for "lawyer office", "legal consultation", "courthouse" - NOT generic "professional meeting"
@@ -238,8 +280,8 @@ Generic or unrelated images undermine credibility and fail to connect with the t
 ### Development Workflow
 
 1. Use Untitled UI CLI to add pre-built components
-2. Customize components by extending existing patterns  
+2. Customize components by extending existing patterns
 3. Create custom landing pages in `app/` directory
 4. Follow established component and styling patterns
 5. Ensure accessibility with React Aria integration
-6. **Leverage design assets** from `src/design-assets` for realistic content
+6. **Leverage design assets** from `src//design-assets` for realistic content

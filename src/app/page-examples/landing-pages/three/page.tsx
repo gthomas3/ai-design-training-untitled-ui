@@ -413,7 +413,7 @@ const ActiveUsersChart = (props: HTMLAttributes<HTMLDivElement>) => {
     );
 };
 
-export const HeroColorCard01 = () => {
+const HeroColorCard01 = () => {
     return (
         <div className="relative overflow-hidden bg-primary">
             <Header />

@@ -22,7 +22,7 @@ const HeaderPrimary = (props: ComponentProps<typeof Header>) => {
     );
 };
 
-export const BackgroundStripes = () => {
+const BackgroundStripes = () => {
     return (
         <div className="absolute top-0 h-108 w-full overflow-hidden pt-[152px] md:pt-[94px] 2xl:h-128 2xl:pt-[136px]">
             <div className="-skew-y-[7deg] [--column-width:minmax(0,calc(1280px/var(--content-columns)))] [--content-columns:12] [--gutter-columns:4] [--stripe-height:34px] sm:[--stripe-height:48px] lg:[--stripe-height:72px]">

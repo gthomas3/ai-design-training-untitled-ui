@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-25: rgb(255 250 245);
+    --color-brand-50: rgb(255 245 235);
+    --color-brand-100: rgb(255 235 215);
+    --color-brand-200: rgb(255 215 175);
+    --color-brand-300: rgb(255 185 125);
+    --color-brand-400: rgb(255 145 75);
+    --color-brand-500: rgb(245 115 35);
+    --color-brand-600: rgb(215 95 25);
+    --color-brand-700: rgb(175 75 15);
+    --color-brand-800: rgb(135 60 10);
+    --color-brand-900: rgb(105 45 5);
+    --color-brand-950: rgb(75 30 0);
+}

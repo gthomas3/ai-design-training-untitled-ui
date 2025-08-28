@@ -45,19 +45,19 @@ const HeroCardMockup05 = () => {
                 />
                 <div className="mx-auto w-full max-w-container px-4 md:px-8">
                     <div className="mx-auto flex max-w-3xl flex-col md:items-center md:text-center">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Super. Simple. Banking.</span>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Think. Learn. Transform.</span>
 
                         <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-2xl">
-                            Simple banking that works like magic.
+                            AI-powered business solutions that work like magic.
                         </h1>
                         <p className="mt-4 max-w-3xl text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                            Simple, transparent banking. No hidden fees and free overdrafts.
+                            Advanced machine learning and AI technologies that automate workflows, enhance decision-making, and accelerate growth.
                         </p>
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 sm:w-auto sm:flex-row sm:items-start md:mt-12">
                             <Button iconLeading={PlayCircle} color="secondary" size="xl">
-                                Demo
+                                Watch Demo
                             </Button>
-                            <Button size="xl">Sign up</Button>
+                            <Button size="xl">Start Free Trial</Button>
                         </div>
                     </div>
                 </div>
@@ -74,18 +74,26 @@ const HeroCardMockup05 = () => {
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="Phoenix Baker" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="AI visualization with layered text"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                             <div
                                 className="[transform:var(--transform-mobile)] md:[transform:var(--transform-desktop)]"
                                 style={
                                     {
                                         "--transform-mobile": "scale(0.79) translate(-98px, -1px) rotate(30deg)",
-                                        "--transform-desktop": "scale(1.77) translate(5px, -11px)  rotate(30deg)",
+                                        "--transform-desktop": "scale(1.77) translate(5px, -11px) rotate(30deg)",
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="OLIVIA RHYE" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="AI robot with human features"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                     </div>
@@ -126,11 +134,12 @@ const IconsAndMockup08 = () => {
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">AI Solutions</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The only card you'll ever need. Simple.</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The only AI platform you'll ever need. Intelligent.</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.
+                        Automate workflows, enhance decision-making, reduce operational costs, and unlock machine learning insights to accelerate your business
+                        growth.
                     </p>
                 </div>
 
@@ -138,20 +147,21 @@ const IconsAndMockup08 = () => {
                     <ul className="grid grid-cols-1 gap-x-8 gap-y-10 md:gap-y-12">
                         {[
                             {
-                                title: "Unlimited cards",
+                                title: "Intelligent automation",
                                 subtitle:
-                                    "Give your team the autonomy they need with access to as many cards as they need. Authorise purchases with a click. Simple.",
+                                    "Deploy AI agents that automate repetitive tasks with precision, giving your team the autonomy they need to focus on strategic work.",
                                 icon: MessageChatCircle,
                             },
                             {
-                                title: "Easy expense policies",
+                                title: "Predictive analytics",
                                 subtitle:
-                                    "Every card comes with configurable spending limits, purchase restrictions, and cancellations for each employee and team.",
+                                    "Every data point comes with AI-powered insights and forecasting capabilities that help you make informed decisions faster.",
                                 icon: Zap,
                             },
                             {
-                                title: "Advanced analytics",
-                                subtitle: "An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.",
+                                title: "Real-time optimization",
+                                subtitle:
+                                    "Machine learning algorithms that continuously optimize your business processes and identify opportunities for growth.",
                                 icon: ChartBreakoutSquare,
                             },
                         ].map((item) => (
@@ -171,36 +181,11 @@ const IconsAndMockup08 = () => {
                     </ul>
 
                     <div className="relative -mx-4 flex h-80 items-center justify-center bg-linear-to-tr from-gray-800 to-gray-700 md:mr-0 md:h-120 lg:h-140">
-                        <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[45px] md:translate-y-[37px] md:-space-y-[83px]">
-                            <div className="relative z-3 translate-y-[22px] rotate-[29.9deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.1]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="lana steiner" />
-                                </div>
-                            </div>
-                            <div className="relative z-2 translate-y-[10px] rotate-[14.8deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.099]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="OLIVIA RHYE" />
-                                </div>
-                            </div>
-                            <div
-                                className="relative z-1 [--scale:1.365] md:[--scale:2.1]"
-                                style={{
-                                    transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                }}
-                            >
-                                <CreditCard type="transparent-gradient" cardHolder="Phoenix Baker" />
-                            </div>
-                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1666597107756-ef489e9f1f09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="AI and machine learning visualization"
+                            className="h-full w-full object-cover"
+                        />
                     </div>
                 </div>
             </div>
@@ -210,42 +195,36 @@ const IconsAndMockup08 = () => {
 
 const plans = [
     {
-        title: "Basic plan",
-        subtitle: "$10/mth",
+        title: "Starter AI",
+        subtitle: "$49/month",
         description: "Billed annually.",
-        features: [
-            "Access to all basic features",
-            "Basic reporting and analytics",
-            "Up to 10 individual users",
-            "20 GB individual data",
-            "Basic chat and email support",
-        ],
+        features: ["Basic AI automation tools", "Standard analytics dashboard", "Up to 1,000 AI operations/month", "10 GB data processing", "Email support"],
         hasCallout: true,
         icon: Zap,
     },
     {
-        title: "Business plan",
-        subtitle: "$20/mth",
+        title: "Professional AI",
+        subtitle: "$149/month",
         description: "Billed annually.",
         features: [
-            "200+ integrations",
-            "Advanced reporting and analytics",
-            "Up to 20 individual users",
-            "40 GB individual data",
-            "Priority chat and email support",
+            "Advanced machine learning models",
+            "Predictive analytics suite",
+            "Up to 10,000 AI operations/month",
+            "100 GB data processing",
+            "Priority phone and email support",
         ],
         icon: LayersTwo01,
     },
     {
-        title: "Enterprise plan",
-        subtitle: "$40/mth",
+        title: "Enterprise AI",
+        subtitle: "$499/month",
         description: "Billed annually.",
         features: [
-            "Advanced custom fields",
-            "Audit log and data history",
-            "Unlimited individual users",
-            "Unlimited individual data",
-            "Personalized + priority service",
+            "Custom AI model training",
+            "Real-time optimization engine",
+            "Unlimited AI operations",
+            "Unlimited data processing",
+            "Dedicated AI consultant",
         ],
         icon: LayersThree01,
     },
@@ -374,9 +353,9 @@ const PricingSectionSimpleCards02 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full max-w-3xl flex-col">
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Pricing</span>
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Simple, transparent pricing</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Simple, intelligent pricing</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        We believe Untitled should be accessible to all companies, no matter the size.
+                        We believe AI should be accessible to all businesses, no matter the size. Scale as you grow.
                     </p>
                 </div>
 
@@ -421,19 +400,20 @@ const FeaturesSimpleIcons01 = () => {
                 <ul className="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
                     {[
                         {
-                            title: "Share team inboxes",
-                            subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+                            title: "Smart data processing",
+                            subtitle:
+                                "Advanced AI algorithms process vast amounts of data in real-time, providing actionable insights for your business decisions.",
                             icon: MessageChatCircle,
                         },
                         {
-                            title: "Deliver instant answers",
-                            subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+                            title: "Automated workflows",
+                            subtitle:
+                                "Intelligent automation that learns from your processes and continuously optimizes operations to save time and reduce errors.",
                             icon: Zap,
                         },
                         {
-                            title: "Manage your team with reports",
-                            subtitle:
-                                "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                            title: "Predictive analytics",
+                            subtitle: "Machine learning models that forecast trends, identify opportunities, and help you stay ahead of market changes.",
                             icon: ChartBreakoutSquare,
                         },
                     ].map((item) => (
@@ -477,11 +457,11 @@ const FeaturesTabsMockup09 = () => {
         <section className="overflow-hidden bg-primary pt-16 lg:pt-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">AI Capabilities</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one finance for any business</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one AI platform for any business</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Get a deposit account, credit card, and spend management software—in one refreshingly easy solution. No fees or minimums.{" "}
+                        Get machine learning, predictive analytics, and intelligent automation—in one powerful AI-driven solution.
                     </p>
                 </div>
 
@@ -489,17 +469,18 @@ const FeaturesTabsMockup09 = () => {
                     <ul className="flex flex-col">
                         {[
                             {
-                                title: "Share team inboxes",
-                                subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+                                title: "Machine learning models",
+                                subtitle: "Deploy custom AI models trained on your data to automate complex decision-making and pattern recognition tasks.",
                             },
                             {
-                                title: "Deliver instant answers",
-                                subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
-                            },
-                            {
-                                title: "Manage your team with reports",
+                                title: "Natural language processing",
                                 subtitle:
-                                    "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                                    "Advanced NLP capabilities that understand context, sentiment, and intent to enhance customer interactions and content analysis.",
+                            },
+                            {
+                                title: "Computer vision",
+                                subtitle:
+                                    "Powerful image and video analysis tools that can identify objects, detect anomalies, and extract insights from visual data.",
                             },
                         ].map((item, index) => (
                             <li key={item.title} onClick={() => setCurrentTab(index)}>
@@ -518,15 +499,10 @@ const FeaturesTabsMockup09 = () => {
                     </ul>
 
                     <div className="relative flex h-90 w-full justify-center md:h-120 lg:-ml-4 lg:h-140 lg:overflow-y-clip">
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="absolute top-16 left-1/2 hidden w-78.5 -translate-x-3/4 drop-shadow-iphone-mockup md:block lg:left-0 lg:translate-x-0"
-                        />
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="h-[579px] w-71 drop-shadow-iphone-mockup md:absolute md:top-0 md:right-1/2 md:h-160 md:w-78.5 md:translate-x-2/3 lg:right-0 lg:translate-x-0"
+                        <img
+                            src="https://images.unsplash.com/photo-1695902173528-0b15104c4554?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="AI data visualization and analytics dashboard"
+                            className="h-full w-full rounded-lg object-cover shadow-xl"
                         />
                     </div>
                 </div>
@@ -568,10 +544,9 @@ const FeaturesIntegrationsIcons03 = () => {
                         Integrations
                     </Badge>
 
-                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Get more value from your tools</h2>
+                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Seamlessly connect with your tools</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favorite tools are just a
-                        click away.
+                        Integrate AI capabilities directly into your existing workflow with our extensive library of connectors and APIs.
                     </p>
                 </div>
 
@@ -579,34 +554,34 @@ const FeaturesIntegrationsIcons03 = () => {
                     <ul className="lg:grid-y-16 grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
                         {[
                             {
-                                title: "Notion integration",
-                                subtitle: "Work faster and smarter by integrating directly with Notion, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/notion.svg",
+                                title: "Salesforce AI",
+                                subtitle: "Enhance your CRM with predictive lead scoring and automated customer insights.",
+                                logo: "/design-assets/logos/Default style/Light mode/Capsule.svg",
                             },
                             {
-                                title: "Slack integration",
-                                subtitle: "Work faster and smarter by integrating directly with Slack, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/slack.svg",
+                                title: "Microsoft Teams",
+                                subtitle: "Deploy AI chatbots and virtual assistants directly in your team collaboration platform.",
+                                logo: "/design-assets/logos/Default style/Light mode/Command+R.svg",
                             },
                             {
-                                title: "Google Drive integration",
-                                subtitle: "Work faster and smarter by integrating directly with Google, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/google_drive.svg",
+                                title: "Google Analytics",
+                                subtitle: "Advanced AI-powered data analysis and automated reporting for better marketing insights.",
+                                logo: "/design-assets/logos/Default style/Light mode/ContrastAI.svg",
                             },
                             {
-                                title: "Intercom integration",
-                                subtitle: "Work faster and smarter by integrating directly with Intercom, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/intercom.svg",
+                                title: "Slack Intelligence",
+                                subtitle: "Smart workflow automation and intelligent message processing for increased productivity.",
+                                logo: "/design-assets/logos/Default style/Light mode/Lightbox.svg",
                             },
                             {
-                                title: "Jira integration",
-                                subtitle: "Work faster and smarter by integrating directly with Jira, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/jira.svg",
+                                title: "AWS Machine Learning",
+                                subtitle: "Scale your AI models with enterprise-grade cloud infrastructure and managed services.",
+                                logo: "/design-assets/logos/Default style/Light mode/Hourglass.svg",
                             },
                             {
-                                title: "Dropbox integration",
-                                subtitle: "Work faster and smarter by integrating directly with Dropbox, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/dropbox.svg",
+                                title: "Tableau AI",
+                                subtitle: "Intelligent data visualization with automated insights and predictive analytics dashboards.",
+                                logo: "/design-assets/logos/Default style/Light mode/Layers.svg",
                             },
                         ].map((item) => (
                             <li key={item.title}>
@@ -634,49 +609,45 @@ const SocialProofCard = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto max-w-container md:px-8">
                 <div className="flex flex-col gap-8 bg-secondary px-6 py-12 md:rounded-2xl md:p-16">
-                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Trusted by 4,000+ companies</p>
+                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Trusted by 2,000+ companies worldwide</p>
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-8">
                         {/* Light mode images (hidden in dark mode) */}
-                        <img alt="Catalog" src="https://www.untitledui.com/logos/logotype/color/catalog.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Pictelai" src="https://www.untitledui.com/logos/logotype/color/pictelai.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Leapyear" src="https://www.untitledui.com/logos/logotype/color/leapyear.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Peregrin" src="https://www.untitledui.com/logos/logotype/color/peregrin.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Easytax" src="https://www.untitledui.com/logos/logotype/color/easytax.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="ContrastAI" src="/design-assets/logos/Default style/Light mode/ContrastAI.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Lightbox" src="/design-assets/logos/Default style/Light mode/Lightbox.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Command+R" src="/design-assets/logos/Default style/Light mode/Command+R.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Light mode/Capsule.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Hourglass" src="/design-assets/logos/Default style/Light mode/Hourglass.svg" className="h-9 md:h-12 dark:hidden" />
                         <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/color/coreos.svg"
+                            alt="Layers"
+                            src="/design-assets/logos/Default style/Light mode/Layers.svg"
                             className="inline-flex h-9 md:hidden md:h-12 dark:hidden"
                         />
 
                         {/* Dark mode images (hidden in light mode) */}
                         <img
-                            alt="Catalog"
-                            src="https://www.untitledui.com/logos/logotype/white/catalog.svg"
+                            alt="ContrastAI"
+                            src="/design-assets/logos/Default style/Dark mode/ContrastAI.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Pictelai"
-                            src="https://www.untitledui.com/logos/logotype/white/pictelai.svg"
+                            alt="Lightbox"
+                            src="/design-assets/logos/Default style/Dark mode/Lightbox.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Leapyear"
-                            src="https://www.untitledui.com/logos/logotype/white/leapyear.svg"
+                            alt="Command+R"
+                            src="/design-assets/logos/Default style/Dark mode/Command+R.svg"
+                            className="h-9 opacity-85 not-dark:hidden md:h-12"
+                        />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Dark mode/Capsule.svg" className="h-9 opacity-85 not-dark:hidden md:h-12" />
+                        <img
+                            alt="Hourglass"
+                            src="/design-assets/logos/Default style/Dark mode/Hourglass.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Peregrin"
-                            src="https://www.untitledui.com/logos/logotype/white/peregrin.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Easytax"
-                            src="https://www.untitledui.com/logos/logotype/white/easytax.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/white/coreos.svg"
+                            alt="Layers"
+                            src="/design-assets/logos/Default style/Dark mode/Layers.svg"
                             className="inline-flex h-9 opacity-85 not-dark:hidden md:hidden md:h-12"
                         />
                     </div>
@@ -693,16 +664,18 @@ const CTACardHorizontalBrand = () => {
                 <div className="flex flex-col gap-x-8 gap-y-8 rounded-2xl bg-brand-section px-6 py-10 lg:flex-row lg:p-16">
                     <div className="flex max-w-3xl flex-1 flex-col">
                         <h2 className="text-display-sm font-semibold text-primary_on-brand">
-                            <span className="hidden md:inline">Start your 30-day free trial</span>
-                            <span className="md:hidden">Start your free trial</span>
+                            <span className="hidden md:inline">Start your AI transformation today</span>
+                            <span className="md:hidden">Start with AI now</span>
                         </h2>
-                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">Join over 4,000+ startups already growing with Untitled.</p>
+                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">
+                            Join over 2,000+ companies already transforming their business with NeuralFlow AI.
+                        </p>
                     </div>
                     <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start">
                         <Button color="secondary" size="xl" className="shadow-xs! ring-0">
                             Learn more
                         </Button>
-                        <Button size="xl">Get started</Button>
+                        <Button size="xl">Start free trial</Button>
                     </div>
                 </div>
             </div>
@@ -716,16 +689,19 @@ const FooterLarge08 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between gap-x-8 gap-y-12 lg:flex-row">
                     <div className="flex flex-col gap-8 md:items-start">
-                        <UntitledLogo className="h-8 w-min shrink-0" />
+                        <div className="flex items-center gap-2">
+                            <img alt="NeuralFlow AI" src="/design-assets/logos/Default style/Light mode/ContrastAI.svg" className="h-8 w-auto" />
+                            <span className="text-xl font-semibold text-primary">NeuralFlow</span>
+                        </div>
                         <nav>
                             <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-[repeat(6,max-content)]">
                                 {[
-                                    { title: "Overview", href: "#" },
-                                    { title: "Features", href: "#" },
+                                    { title: "Platform", href: "#" },
+                                    { title: "Solutions", href: "#" },
                                     { title: "Pricing", href: "#" },
-                                    { title: "Careers", href: "#" },
-                                    { title: "Help", href: "#" },
-                                    { title: "Privacy", href: "#" },
+                                    { title: "Resources", href: "#" },
+                                    { title: "Support", href: "#" },
+                                    { title: "API Docs", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button color="link-gray" size="lg" href={item.href}>
@@ -746,7 +722,7 @@ const FooterLarge08 = () => {
                         className="flex w-full flex-col gap-4 sm:max-w-90"
                     >
                         <label htmlFor="newsletters-email" className="text-sm font-semibold text-primary">
-                            Stay up to date
+                            Stay ahead with AI insights
                         </label>
                         <div className="flex flex-col gap-4 sm:flex-row">
                             <Input
@@ -765,13 +741,13 @@ const FooterLarge08 = () => {
                     </Form>
                 </div>
                 <div className="mt-12 flex flex-col-reverse justify-between gap-4 border-t border-secondary pt-8 md:mt-16 md:flex-row md:gap-6">
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <p className="text-md text-quaternary">© 2024 NeuralFlow AI. All rights reserved.</p>
 
                     <ul className="flex gap-4">
                         {[
                             { title: "Terms", href: "#" },
                             { title: "Privacy", href: "#" },
-                            { title: "Cookies", href: "#" },
+                            { title: "AI Ethics", href: "#" },
                         ].map(({ title, href }) => (
                             <li key={title}>
                                 <a href={href} className="text-md text-quaternary transition duration-100 ease-linear hover:text-tertiary">
@@ -786,7 +762,7 @@ const FooterLarge08 = () => {
     );
 };
 
-const LandingPage08 = () => {
+const NeuralFlowV1 = () => {
     return (
         <div className="bg-primary">
             <HeroCardMockup05 />
@@ -812,4 +788,4 @@ const LandingPage08 = () => {
     );
 };
 
-export default LandingPage08;
+export default NeuralFlowV1;

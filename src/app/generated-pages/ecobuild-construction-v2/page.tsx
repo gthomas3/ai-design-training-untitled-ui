@@ -42,38 +42,38 @@ const HeroGeometricShapes04 = () => {
                     <div className="mx-auto flex max-w-5xl flex-col md:items-center md:text-center">
                         <a href="#" className="rounded-full outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2">
                             <BadgeGroup className="hidden md:flex" size="lg" addonText="We're hiring!" iconTrailing={ArrowRight} theme="light" color="brand">
-                                Join our design team
+                                Join our green building team
                             </BadgeGroup>
                             <BadgeGroup className="md:hidden" size="md" addonText="We're hiring!" iconTrailing={ArrowRight} theme="light" color="brand">
-                                Join our design team
+                                Join our green building team
                             </BadgeGroup>
                         </a>
 
                         <h1 className="mt-4 text-display-md font-medium text-primary md:text-display-lg lg:text-display-xl">
-                            Creating stylish, functional and memorable spaces
+                            Creating sustainable, efficient and carbon-neutral spaces
                         </h1>
                         <p className="mt-4 max-w-120 text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                            — We're a full-service interior design studio who specialize in simple and timeless spaces.
+                            — We're a full-service green construction company who specialize in sustainable building and environmental responsibility.
                         </p>
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 sm:w-auto sm:flex-row sm:items-start md:mt-12">
                             <Button iconLeading={PlayCircle} color="secondary" size="xl">
-                                Showreel
+                                Project Gallery
                             </Button>
-                            <Button size="xl">Chat to us</Button>
+                            <Button size="xl">Get Quote</Button>
                         </div>
                     </div>
                 </div>
 
                 <div className="mx-auto mt-16 w-full max-w-container px-4 md:px-8">
                     <img
-                        alt="Geo Shapes Desktop 04"
-                        src="https://www.untitledui.com/marketing/geo-shapes/geo-shapes-desktop-04.svg"
-                        className="hidden w-full object-cover sm:block"
+                        alt="Sustainable building construction site"
+                        src="https://images.unsplash.com/photo-1594080051162-74b97d619668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+                        className="hidden w-full rounded-xl object-cover shadow-2xl sm:block"
                     />
                     <img
-                        alt="Geo Shapes Mobile 04"
-                        src="https://www.untitledui.com/marketing/geo-shapes/geo-shapes-mobile-04.svg"
-                        className="w-full object-cover sm:hidden"
+                        alt="Green building construction"
+                        src="https://images.unsplash.com/photo-1521708266372-b3547456cc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                        className="w-full rounded-xl object-cover shadow-2xl sm:hidden"
                     />
                 </div>
             </section>
@@ -86,45 +86,41 @@ const SocialProofFullWidth = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col gap-8">
-                    <p className="text-center text-md font-medium text-tertiary">Join 4,000+ companies already growing</p>
+                    <p className="text-center text-md font-medium text-tertiary">Join 150+ companies building sustainably</p>
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-6">
                         {/* Light mode images (hidden in dark mode) */}
-                        <img alt="Odeaolabs" src="https://www.untitledui.com/logos/logotype/color/odeaolabs.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Kintsugi" src="https://www.untitledui.com/logos/logotype/color/kintsugi.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Stackedlab" src="https://www.untitledui.com/logos/logotype/color/stackedlab.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Magnolia" src="https://www.untitledui.com/logos/logotype/color/magnolia.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Warpspeed" src="https://www.untitledui.com/logos/logotype/color/warpspeed.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Sisyphus" src="https://www.untitledui.com/logos/logotype/color/sisyphus.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="BuildingBlocks" src="/design-assets/logos/Default style/Light mode/BuildingBlocks.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Boltshift" src="/design-assets/logos/Default style/Light mode/Boltshift.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="FeatherDev" src="/design-assets/logos/Default style/Light mode/FeatherDev.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Lightbox" src="/design-assets/logos/Default style/Light mode/Lightbox.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Light mode/Capsule.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Hourglass" src="/design-assets/logos/Default style/Light mode/Hourglass.svg" className="h-9 md:h-12 dark:hidden" />
 
                         {/* Dark mode images (hidden in light mode) */}
                         <img
-                            alt="Odeaolabs"
-                            src="https://www.untitledui.com/logos/logotype/white/odeaolabs.svg"
+                            alt="BuildingBlocks"
+                            src="/design-assets/logos/Default style/Dark mode/BuildingBlocks.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Kintsugi"
-                            src="https://www.untitledui.com/logos/logotype/white/kintsugi.svg"
+                            alt="Boltshift"
+                            src="/design-assets/logos/Default style/Dark mode/Boltshift.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Stackedlab"
-                            src="https://www.untitledui.com/logos/logotype/white/stackedlab.svg"
+                            alt="FeatherDev"
+                            src="/design-assets/logos/Default style/Dark mode/FeatherDev.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Magnolia"
-                            src="https://www.untitledui.com/logos/logotype/white/magnolia.svg"
+                            alt="Lightbox"
+                            src="/design-assets/logos/Default style/Dark mode/Lightbox.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Dark mode/Capsule.svg" className="h-9 opacity-85 not-dark:hidden md:h-12" />
                         <img
-                            alt="Warpspeed"
-                            src="https://www.untitledui.com/logos/logotype/white/warpspeed.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Sisyphus"
-                            src="https://www.untitledui.com/logos/logotype/white/sisyphus.svg"
+                            alt="Hourglass"
+                            src="/design-assets/logos/Default style/Dark mode/Hourglass.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                     </div>
@@ -139,43 +135,42 @@ const ContentSectionSplitImage03 = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto grid w-full max-w-container grid-cols-1 items-center gap-12 px-4 md:gap-16 md:px-8 lg:grid-cols-2">
                 <div className="flex flex-col">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Our studio</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Our approach</span>
                     <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">
-                        Design that influences how people work, learn, live and experience the world.
+                        Construction that influences how people work, live and experience sustainable environments.
                     </h2>
                     <div className="prose mt-8 md:prose-lg md:mt-12">
                         <p>
-                            Mi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse morbi eleifend faucibus eget vestibulum felis. Dictum quis
-                            montes, sit sit. Tellus aliquam enim urna, etiam.
+                            Our sustainable construction methodology integrates cutting-edge green building technologies with time-tested environmental
+                            practices. Every project begins with a comprehensive environmental impact assessment.
                         </p>
                         <p>
-                            Dolor enim eu tortor urna sed duis nulla. Aliquam vestibulum, nulla odio nisl vitae. In aliquet pellentesque aenean hac vestibulum
-                            turpis mi bibendum diam. Tempor integer aliquam in vitae malesuada.
+                            We source materials from certified sustainable suppliers, implement energy-efficient systems, and design buildings that minimize
+                            carbon footprint while maximizing operational efficiency for decades to come.
                         </p>
 
                         <p>
-                            Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet commodo consectetur convallis risus. Sed condimentum enim
-                            dignissim adipiscing faucibus consequat, urna. Viverra purus et erat auctor aliquam. Risus, volutpat vulputate posuere purus sit
-                            congue convallis aliquet.
+                            Our team of certified green building professionals ensures that every aspect of construction meets or exceeds environmental
+                            standards. From foundation to finish, we prioritize renewable materials and energy systems.
                         </p>
                         <p>
-                            Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien,
-                            dictum molestie sem tempor. Diam elit, orci, tincidunt aenean.{" "}
+                            Each building we construct becomes a model for sustainable development in the community. We design structures that not only reduce
+                            environmental impact but also provide healthier, more comfortable spaces for occupants.
                         </p>
                     </div>
                     <div className="mt-8 flex flex-col-reverse gap-3 md:mt-12 md:flex-row">
                         <Button color="secondary" size="xl">
-                            Get in touch
+                            View Projects
                         </Button>
-                        <Button size="xl">Our process</Button>
+                        <Button size="xl">Our Process</Button>
                     </div>
                 </div>
 
                 <div className="h-60 lg:h-163.5">
                     <img
-                        src="https://www.untitledui.com/marketing/content-section-03.webp"
-                        className="size-full object-cover"
-                        alt="Abstract 3D holographic rectangles"
+                        src="https://images.unsplash.com/photo-1647709332683-fd6359cf879d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                        className="size-full rounded-xl object-cover shadow-xl"
+                        alt="Sustainable construction materials and eco-friendly building process"
                     />
                 </div>
             </div>
@@ -185,27 +180,27 @@ const ContentSectionSplitImage03 = () => {
 
 const reviews = [
     {
-        quote: "We've really sped up our workflow using Untitled and haven't looked back.",
+        quote: "EcoBuild transformed our office into a sustainable workspace that reduces energy costs by 40%.",
         author: {
-            name: "Sienna Hewitt",
-            title: "Project Manager, Warpspeed",
-            avatarUrl: "https://www.untitledui.com/images/avatars/sienna-hewitt?fm=webp&q=80",
+            name: "Sarah Mitchell",
+            title: "Facilities Manager, GreenTech Corp",
+            avatarUrl: "/design-assets/avatars/PNG (transparent background)/Sarah Johnson.png",
         },
     },
     {
-        quote: "Love the simplicity of the service and the prompt customer support.",
+        quote: "Outstanding green construction expertise. Our LEED certification was seamless thanks to their guidance.",
         author: {
-            name: "Caitlyn King",
-            title: "Data Engineer, Sisyphus",
-            avatarUrl: "https://www.untitledui.com/images/avatars/caitlyn-king?fm=webp&q=80",
+            name: "David Chen",
+            title: "Property Developer, Urban Spaces",
+            avatarUrl: "/design-assets/avatars/PNG (transparent background)/Amelie Laurent.png",
         },
     },
     {
-        quote: "Untitled has saved us thousands of hours of work.",
+        quote: "EcoBuild's sustainable materials and construction methods exceeded all our environmental goals.",
         author: {
-            name: "Lulu Meyers",
-            title: "PM, Hourglass",
-            avatarUrl: "https://www.untitledui.com/images/avatars/lulu-meyers?fm=webp&q=80",
+            name: "Lisa Rodriguez",
+            title: "Sustainability Director, Metro Housing",
+            avatarUrl: "/design-assets/avatars/PNG (transparent background)/Candice Wu.png",
         },
     },
 ];
@@ -360,33 +355,33 @@ const TestimonialAbstractImage = () => {
 
                 <div className="grid h-122 w-[150%] grid-cols-[repeat(12,1fr)] grid-rows-[repeat(12,1fr)] gap-2 self-center sm:h-124 sm:w-[120%] md:w-auto md:gap-4 lg:flex-1">
                     <img
-                        src="https://www.untitledui.com/marketing/testimonial-abstract-image-01.webp"
-                        className="size-full object-cover"
-                        alt="Alisa Hester"
+                        src="https://images.unsplash.com/photo-1594080051162-74b97d619668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                        className="size-full rounded-lg object-cover shadow-lg"
+                        alt="Sustainable building materials"
                         style={{ gridArea: "3 / 3 / 7 / 7" }}
                     />
                     <img
-                        src="https://www.untitledui.com/marketing/smiling-girl-3.webp"
-                        className="size-full object-cover"
-                        alt="Alisa Hester"
+                        src="https://images.unsplash.com/photo-1521708266372-b3547456cc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                        className="size-full rounded-lg object-cover shadow-lg"
+                        alt="Green building exterior"
                         style={{ gridArea: "1 / 7 / 7 / 11" }}
                     />
                     <img
-                        src="https://www.untitledui.com/marketing/ai-woman-03.webp"
-                        className="size-full object-cover"
-                        alt="Alisa Hester"
+                        src="https://images.unsplash.com/photo-1647709332683-fd6359cf879d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                        className="size-full rounded-lg object-cover shadow-lg"
+                        alt="Construction worker with eco materials"
                         style={{ gridArea: "7 / 1 / 10 / 5" }}
                     />
                     <img
-                        src="https://www.untitledui.com/marketing/two-standing-women.webp"
-                        className="size-full object-cover"
-                        alt="Alisa Hester"
+                        src="https://images.unsplash.com/photo-1603093159687-24356731a8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                        className="size-full rounded-lg object-cover shadow-lg"
+                        alt="Sustainable construction project"
                         style={{ gridArea: "7 / 5 / 13 / 9" }}
                     />
                     <img
-                        src="https://www.untitledui.com/marketing/smiling-girl-8.webp"
-                        className="size-full object-cover"
-                        alt="Alisa Hester"
+                        src="https://images.unsplash.com/photo-1451976426598-a7593bd6d0b2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                        className="size-full rounded-lg object-cover shadow-lg"
+                        alt="Green building design"
                         style={{ gridArea: "7 / 9 / 10 / 13" }}
                     />
                 </div>
@@ -401,17 +396,35 @@ const MetricsSplitImage01 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col gap-12 md:gap-16">
                     <div className="flex w-full flex-col md:max-w-3xl">
-                        <p className="text-sm font-semibold text-brand-secondary md:text-md">Launch faster</p>
-                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Creating memorable spaces</h2>
-                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">We design physical experiences that create more happy in the world.</p>
+                        <p className="text-sm font-semibold text-brand-secondary md:text-md">Environmental Impact</p>
+                        <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Building sustainable communities</h2>
+                        <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
+                            We construct eco-friendly buildings that create lasting environmental and economic benefits.
+                        </p>
                     </div>
                     <div className="grid grid-cols-1 gap-12 md:gap-8 lg:grid-cols-2">
                         <dl className="grid grid-cols-1 gap-8 self-center md:grid-cols-2 md:gap-y-16 md:pr-8">
                             {[
-                                { title: "400+", subtitle: "Projects completed", description: "We've helped build over 400 amazing projects." },
-                                { title: "600%", subtitle: "Return on investment", description: "Our customers have reported an average of ~600% ROI." },
-                                { title: "10k", subtitle: "Global downloads", description: "Our free UI kit has been downloaded over 10k times." },
-                                { title: "200+", subtitle: "5-star reviews", description: "We're proud of our 5-star rating with over 200 reviews." },
+                                {
+                                    title: "200+",
+                                    subtitle: "Green projects completed",
+                                    description: "We've helped build over 200 sustainable construction projects.",
+                                },
+                                {
+                                    title: "45%",
+                                    subtitle: "Average energy savings",
+                                    description: "Our buildings achieve an average of 45% energy cost reduction.",
+                                },
+                                {
+                                    title: "500k",
+                                    subtitle: "Tons CO2 prevented",
+                                    description: "Our sustainable practices have prevented 500k tons of CO2 emissions.",
+                                },
+                                {
+                                    title: "150+",
+                                    subtitle: "LEED certifications",
+                                    description: "We're proud to have achieved over 150 LEED certified buildings.",
+                                },
                             ].map((item) => (
                                 <div key={item.title} className="flex flex-1 flex-col-reverse gap-3 text-center">
                                     <div className="flex flex-col gap-1">
@@ -424,9 +437,9 @@ const MetricsSplitImage01 = () => {
                         </dl>
 
                         <img
-                            src="https://www.untitledui.com/marketing/photographer-girl.webp"
-                            alt="Professional female photographer holding a camera in natural lighting"
-                            className="h-70 w-full object-cover md:h-140"
+                            src="https://images.unsplash.com/photo-1594080051162-74b97d619668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Sustainable construction professional reviewing green building plans"
+                            className="h-70 w-full rounded-xl object-cover shadow-2xl md:h-140"
                         />
                     </div>
                 </div>
@@ -443,18 +456,20 @@ const ContactSectionIconsAndImage = () => {
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-24">
                         <div className="flex w-full max-w-3xl flex-col">
                             <span className="text-sm font-semibold text-brand-secondary md:text-md">Contact us</span>
-                            <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Chat to our friendly team</h2>
-                            <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">We'd love to hear from you! Please get in touch.</p>
+                            <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Connect with our green building experts</h2>
+                            <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
+                                Ready to start your sustainable construction project? Let's discuss how we can help.
+                            </p>
                         </div>
 
                         <ul className="grid grid-cols-1 gap-10 md:gap-8">
                             {[
                                 {
-                                    title: "Melbourne",
-                                    subtitle: "100 Flinders Street, \nMelbourne VIC 3000 AU",
+                                    title: "Seattle Office",
+                                    subtitle: "1200 Green Building Way, \\nSeattle WA 98101 US",
                                     icon: MarkerPin02,
                                 },
-                                { title: "Sydney", subtitle: "100 George Street, \nSydney NSW 2000 AU", icon: MarkerPin02 },
+                                { title: "Portland Office", subtitle: "800 Sustainable Blvd, \\nPortland OR 97201 US", icon: MarkerPin02 },
                             ].map((item) => (
                                 <li key={item.title} className="flex items-start gap-4">
                                     <item.icon className="size-6 pt-0.5 text-icon-fg-brand" />
@@ -471,9 +486,9 @@ const ContactSectionIconsAndImage = () => {
             <section className="-mt-16 pb-16 md:-mt-24 md:pb-24">
                 <div className="mx-auto max-w-container px-4 md:px-8">
                     <img
-                        src="https://www.untitledui.com/marketing/smiling-girl-3.webp"
-                        className="h-60 w-full object-cover shadow-3xl md:h-120 lg:h-140"
-                        alt="Team discussing a topic"
+                        src="https://images.unsplash.com/photo-1603093159687-24356731a8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+                        className="h-60 w-full rounded-xl object-cover shadow-3xl md:h-120 lg:h-140"
+                        alt="EcoBuild construction team collaborating on sustainable building project"
                     />
                 </div>
             </section>
@@ -487,9 +502,11 @@ const NewsletterCardVertical = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col items-center rounded-2xl bg-secondary px-6 py-10 text-center lg:p-16">
                     <h2 className="text-display-sm font-semibold text-primary xl:text-display-md">
-                        Still thinking <br className="md:hidden" /> about it?
+                        Ready to build <br className="md:hidden" /> sustainably?
                     </h2>
-                    <p className="mt-4 text-lg text-tertiary md:mt-5 lg:text-xl">Sign up for our newsletter and get 10% off your next purchase.</p>
+                    <p className="mt-4 text-lg text-tertiary md:mt-5 lg:text-xl">
+                        Get our sustainability newsletter and receive 15% off your first green building consultation.
+                    </p>
                     <Form
                         onSubmit={(e) => {
                             e.preventDefault();
@@ -512,7 +529,7 @@ const NewsletterCardVertical = () => {
                                         href="#"
                                         className="rounded-xs underline underline-offset-3 outline-focus-ring focus-visible:outline-2 focus-visible:outline-offset-2"
                                     >
-                                        privacy policy
+                                        environmental policy
                                     </a>
                                     .
                                 </span>
@@ -533,16 +550,19 @@ const FooterLarge15 = () => {
         <footer className="dark-mode bg-primary py-12 md:pt-16">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col gap-8 md:items-center">
-                    <UntitledLogo className="h-8 w-min shrink-0" />
+                    <div className="flex items-center gap-2">
+                        <img alt="EcoBuild Construction" src="/design-assets/logos/Default style/Light mode/BuildingBlocks.svg" className="h-8 w-auto" />
+                        <span className="text-xl font-semibold text-primary">EcoBuild</span>
+                    </div>
                     <nav>
                         <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-[repeat(6,max-content)]">
                             {[
-                                { title: "Overview", href: "#" },
-                                { title: "Features", href: "#" },
-                                { title: "Pricing", href: "#" },
-                                { title: "Careers", href: "#" },
-                                { title: "Help", href: "#" },
-                                { title: "Privacy", href: "#" },
+                                { title: "About", href: "#" },
+                                { title: "Services", href: "#" },
+                                { title: "Projects", href: "#" },
+                                { title: "Certifications", href: "#" },
+                                { title: "Contact", href: "#" },
+                                { title: "Sustainability", href: "#" },
                             ].map((item) => (
                                 <li key={item.title}>
                                     <Button color="link-gray" size="lg" href={item.href}>
@@ -554,13 +574,13 @@ const FooterLarge15 = () => {
                     </nav>
                 </div>
                 <div className="mt-12 flex flex-col-reverse justify-between gap-4 border-t border-secondary pt-8 md:mt-16 md:flex-row md:gap-6">
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <p className="text-md text-quaternary">© 2024 EcoBuild Construction. All rights reserved.</p>
 
                     <ul className="flex gap-4">
                         {[
                             { title: "Terms", href: "#" },
                             { title: "Privacy", href: "#" },
-                            { title: "Cookies", href: "#" },
+                            { title: "Environmental", href: "#" },
                         ].map(({ title, href }) => (
                             <li key={title}>
                                 <a href={href} className="text-md text-quaternary transition duration-100 ease-linear hover:text-tertiary">
@@ -575,7 +595,7 @@ const FooterLarge15 = () => {
     );
 };
 
-const LandingPage14 = () => {
+const EcoBuildV2 = () => {
     return (
         <div className="bg-primary">
             <HeroGeometricShapes04 />
@@ -601,4 +621,4 @@ const LandingPage14 = () => {
     );
 };
 
-export default LandingPage14;
+export default EcoBuildV2;

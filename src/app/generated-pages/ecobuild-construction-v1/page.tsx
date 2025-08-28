@@ -45,19 +45,19 @@ const HeroCardMockup05 = () => {
                 />
                 <div className="mx-auto w-full max-w-container px-4 md:px-8">
                     <div className="mx-auto flex max-w-3xl flex-col md:items-center md:text-center">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Super. Simple. Banking.</span>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Build. Smart. Sustainable.</span>
 
                         <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-2xl">
-                            Simple banking that works like magic.
+                            Green construction that works like magic.
                         </h1>
                         <p className="mt-4 max-w-3xl text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                            Simple, transparent banking. No hidden fees and free overdrafts.
+                            Sustainable building materials and eco-friendly construction practices that reduce costs and environmental impact.
                         </p>
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 sm:w-auto sm:flex-row sm:items-start md:mt-12">
                             <Button iconLeading={PlayCircle} color="secondary" size="xl">
-                                Demo
+                                Watch Demo
                             </Button>
-                            <Button size="xl">Sign up</Button>
+                            <Button size="xl">Get Quote</Button>
                         </div>
                     </div>
                 </div>
@@ -74,18 +74,26 @@ const HeroCardMockup05 = () => {
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="Phoenix Baker" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1594080051162-74b97d619668?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="Sustainable construction materials"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                             <div
                                 className="[transform:var(--transform-mobile)] md:[transform:var(--transform-desktop)]"
                                 style={
                                     {
                                         "--transform-mobile": "scale(0.79) translate(-98px, -1px) rotate(30deg)",
-                                        "--transform-desktop": "scale(1.77) translate(5px, -11px)  rotate(30deg)",
+                                        "--transform-desktop": "scale(1.77) translate(5px, -11px) rotate(30deg)",
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="OLIVIA RHYE" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1521708266372-b3547456cc2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="Green building exterior"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                     </div>
@@ -126,11 +134,13 @@ const IconsAndMockup08 = () => {
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Sustainable Solutions</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The only card you'll ever need. Simple.</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">
+                        The only construction partner you'll ever need. Green.
+                    </h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.
+                        Build smarter, reduce environmental impact, save on material costs, and unlock sustainable practices to grow your construction business.
                     </p>
                 </div>
 
@@ -138,20 +148,21 @@ const IconsAndMockup08 = () => {
                     <ul className="grid grid-cols-1 gap-x-8 gap-y-10 md:gap-y-12">
                         {[
                             {
-                                title: "Unlimited cards",
+                                title: "Eco-friendly materials",
                                 subtitle:
-                                    "Give your team the autonomy they need with access to as many cards as they need. Authorise purchases with a click. Simple.",
+                                    "Access to sustainable building materials that reduce environmental impact while maintaining structural integrity and durability.",
                                 icon: MessageChatCircle,
                             },
                             {
-                                title: "Easy expense policies",
+                                title: "Energy-efficient design",
                                 subtitle:
-                                    "Every card comes with configurable spending limits, purchase restrictions, and cancellations for each employee and team.",
+                                    "Every project incorporates energy-saving design principles, reducing long-term operational costs for building owners.",
                                 icon: Zap,
                             },
                             {
-                                title: "Advanced analytics",
-                                subtitle: "An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.",
+                                title: "Cost-effective solutions",
+                                subtitle:
+                                    "Sustainable construction that reduces material waste, lowers energy costs, and provides long-term financial benefits.",
                                 icon: ChartBreakoutSquare,
                             },
                         ].map((item) => (
@@ -171,36 +182,11 @@ const IconsAndMockup08 = () => {
                     </ul>
 
                     <div className="relative -mx-4 flex h-80 items-center justify-center bg-linear-to-tr from-gray-800 to-gray-700 md:mr-0 md:h-120 lg:h-140">
-                        <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[45px] md:translate-y-[37px] md:-space-y-[83px]">
-                            <div className="relative z-3 translate-y-[22px] rotate-[29.9deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.1]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="lana steiner" />
-                                </div>
-                            </div>
-                            <div className="relative z-2 translate-y-[10px] rotate-[14.8deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.099]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="OLIVIA RHYE" />
-                                </div>
-                            </div>
-                            <div
-                                className="relative z-1 [--scale:1.365] md:[--scale:2.1]"
-                                style={{
-                                    transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                }}
-                            >
-                                <CreditCard type="transparent-gradient" cardHolder="Phoenix Baker" />
-                            </div>
-                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1647709332683-fd6359cf879d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Sustainable construction project"
+                            className="h-full w-full object-cover"
+                        />
                     </div>
                 </div>
             </div>
@@ -210,42 +196,42 @@ const IconsAndMockup08 = () => {
 
 const plans = [
     {
-        title: "Basic plan",
-        subtitle: "$10/mth",
-        description: "Billed annually.",
+        title: "Basic Green",
+        subtitle: "$150/project",
+        description: "Per consultation.",
         features: [
-            "Access to all basic features",
-            "Basic reporting and analytics",
-            "Up to 10 individual users",
-            "20 GB individual data",
-            "Basic chat and email support",
+            "Sustainability assessment",
+            "Basic eco-material recommendations",
+            "Up to 3 design consultations",
+            "Basic energy efficiency analysis",
+            "Email support",
         ],
         hasCallout: true,
         icon: Zap,
     },
     {
-        title: "Business plan",
-        subtitle: "$20/mth",
-        description: "Billed annually.",
+        title: "Professional Build",
+        subtitle: "$500/project",
+        description: "Comprehensive service.",
         features: [
-            "200+ integrations",
-            "Advanced reporting and analytics",
-            "Up to 20 individual users",
-            "40 GB individual data",
-            "Priority chat and email support",
+            "Full sustainable design package",
+            "Advanced material sourcing",
+            "Up to 10 design consultations",
+            "Energy efficiency certification",
+            "Priority phone and email support",
         ],
         icon: LayersTwo01,
     },
     {
-        title: "Enterprise plan",
-        subtitle: "$40/mth",
-        description: "Billed annually.",
+        title: "Enterprise Green",
+        subtitle: "Custom pricing",
+        description: "Large scale projects.",
         features: [
-            "Advanced custom fields",
-            "Audit log and data history",
-            "Unlimited individual users",
-            "Unlimited individual data",
-            "Personalized + priority service",
+            "Full project management",
+            "LEED certification assistance",
+            "Unlimited consultations",
+            "Comprehensive sustainability reporting",
+            "Dedicated project manager",
         ],
         icon: LayersThree01,
     },
@@ -376,7 +362,7 @@ const PricingSectionSimpleCards02 = () => {
                     <span className="text-sm font-semibold text-brand-secondary md:text-md">Pricing</span>
                     <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Simple, transparent pricing</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        We believe Untitled should be accessible to all companies, no matter the size.
+                        We believe sustainable construction should be accessible to all builders, no matter the project size.
                     </p>
                 </div>
 
@@ -421,19 +407,21 @@ const FeaturesSimpleIcons01 = () => {
                 <ul className="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
                     {[
                         {
-                            title: "Share team inboxes",
-                            subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+                            title: "Sustainable materials",
+                            subtitle:
+                                "Access to the latest eco-friendly building materials that reduce environmental impact while maintaining quality and durability.",
                             icon: MessageChatCircle,
                         },
                         {
-                            title: "Deliver instant answers",
-                            subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+                            title: "Energy efficiency",
+                            subtitle:
+                                "Design and construction practices that dramatically reduce energy consumption and operational costs for building owners.",
                             icon: Zap,
                         },
                         {
-                            title: "Manage your team with reports",
+                            title: "Environmental reporting",
                             subtitle:
-                                "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                                "Comprehensive environmental impact reports that track carbon footprint reduction, waste minimization, and sustainability metrics.",
                             icon: ChartBreakoutSquare,
                         },
                     ].map((item) => (
@@ -477,11 +465,11 @@ const FeaturesTabsMockup09 = () => {
         <section className="overflow-hidden bg-primary pt-16 lg:pt-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Solutions</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one finance for any business</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one green building for any project</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Get a deposit account, credit card, and spend management software—in one refreshingly easy solution. No fees or minimums.{" "}
+                        Get sustainable materials, energy-efficient design, and construction management—in one comprehensive eco-friendly solution.
                     </p>
                 </div>
 
@@ -489,17 +477,18 @@ const FeaturesTabsMockup09 = () => {
                     <ul className="flex flex-col">
                         {[
                             {
-                                title: "Share team inboxes",
-                                subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
-                            },
-                            {
-                                title: "Deliver instant answers",
-                                subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
-                            },
-                            {
-                                title: "Manage your team with reports",
+                                title: "Sustainable sourcing",
                                 subtitle:
-                                    "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                                    "Direct access to certified sustainable materials from trusted suppliers, ensuring every component meets environmental standards.",
+                            },
+                            {
+                                title: "Energy optimization",
+                                subtitle:
+                                    "Advanced building techniques that maximize energy efficiency and reduce long-term operational costs for property owners.",
+                            },
+                            {
+                                title: "Environmental compliance",
+                                subtitle: "Full regulatory compliance and certification assistance for LEED, BREEAM, and other green building standards.",
                             },
                         ].map((item, index) => (
                             <li key={item.title} onClick={() => setCurrentTab(index)}>
@@ -518,15 +507,10 @@ const FeaturesTabsMockup09 = () => {
                     </ul>
 
                     <div className="relative flex h-90 w-full justify-center md:h-120 lg:-ml-4 lg:h-140 lg:overflow-y-clip">
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="absolute top-16 left-1/2 hidden w-78.5 -translate-x-3/4 drop-shadow-iphone-mockup md:block lg:left-0 lg:translate-x-0"
-                        />
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="h-[579px] w-71 drop-shadow-iphone-mockup md:absolute md:top-0 md:right-1/2 md:h-160 md:w-78.5 md:translate-x-2/3 lg:right-0 lg:translate-x-0"
+                        <img
+                            src="https://images.unsplash.com/photo-1603093159687-24356731a8b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Sustainable construction project"
+                            className="h-full w-full rounded-lg object-cover shadow-xl"
                         />
                     </div>
                 </div>
@@ -562,16 +546,15 @@ const FeaturesIntegrationsIcons03 = () => {
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <Badge size="md" type="pill-color" color="brand" className="inline-flex md:hidden">
-                        Integrations
+                        Partnerships
                     </Badge>
                     <Badge size="lg" type="pill-color" color="brand" className="hidden md:inline-flex">
-                        Integrations
+                        Partnerships
                     </Badge>
 
-                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Get more value from your tools</h2>
+                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Trusted by leading suppliers</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favorite tools are just a
-                        click away.
+                        Partner with the best sustainable material suppliers and green technology providers in the industry.
                     </p>
                 </div>
 
@@ -579,34 +562,34 @@ const FeaturesIntegrationsIcons03 = () => {
                     <ul className="lg:grid-y-16 grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
                         {[
                             {
-                                title: "Notion integration",
-                                subtitle: "Work faster and smarter by integrating directly with Notion, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/notion.svg",
+                                title: "Green Materials Co",
+                                subtitle: "Sustainable building materials sourced directly from certified eco-friendly suppliers.",
+                                logo: "/design-assets/logos/Default style/Light mode/FeatherDev.svg",
                             },
                             {
-                                title: "Slack integration",
-                                subtitle: "Work faster and smarter by integrating directly with Slack, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/slack.svg",
+                                title: "EcoTech Solutions",
+                                subtitle: "Advanced green technology integration for energy-efficient building systems.",
+                                logo: "/design-assets/logos/Default style/Light mode/Lightbox.svg",
                             },
                             {
-                                title: "Google Drive integration",
-                                subtitle: "Work faster and smarter by integrating directly with Google, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/google_drive.svg",
+                                title: "Renewable Systems",
+                                subtitle: "Solar, wind, and geothermal energy solutions for sustainable construction projects.",
+                                logo: "/design-assets/logos/Default style/Light mode/Boltshift.svg",
                             },
                             {
-                                title: "Intercom integration",
-                                subtitle: "Work faster and smarter by integrating directly with Intercom, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/intercom.svg",
+                                title: "Smart Building Tech",
+                                subtitle: "IoT and automation systems that optimize energy usage and building performance.",
+                                logo: "/design-assets/logos/Default style/Light mode/Capsule.svg",
                             },
                             {
-                                title: "Jira integration",
-                                subtitle: "Work faster and smarter by integrating directly with Jira, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/jira.svg",
+                                title: "Green Certification",
+                                subtitle: "LEED and BREEAM certification consultants who ensure compliance with standards.",
+                                logo: "/design-assets/logos/Default style/Light mode/Command+R.svg",
                             },
                             {
-                                title: "Dropbox integration",
-                                subtitle: "Work faster and smarter by integrating directly with Dropbox, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/dropbox.svg",
+                                title: "Waste Solutions",
+                                subtitle: "Construction waste management and recycling services for zero-waste building.",
+                                logo: "/design-assets/logos/Default style/Light mode/Hourglass.svg",
                             },
                         ].map((item) => (
                             <li key={item.title}>
@@ -616,7 +599,7 @@ const FeaturesIntegrationsIcons03 = () => {
                                     subtitle={item.subtitle}
                                     footer={
                                         <Button color="link-color" size="lg" href="#" iconTrailing={ArrowRight}>
-                                            View integration
+                                            View partnership
                                         </Button>
                                     }
                                 />
@@ -634,49 +617,45 @@ const SocialProofCard = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto max-w-container md:px-8">
                 <div className="flex flex-col gap-8 bg-secondary px-6 py-12 md:rounded-2xl md:p-16">
-                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Trusted by 4,000+ companies</p>
+                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Trusted by 200+ construction companies</p>
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-8">
                         {/* Light mode images (hidden in dark mode) */}
-                        <img alt="Catalog" src="https://www.untitledui.com/logos/logotype/color/catalog.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Pictelai" src="https://www.untitledui.com/logos/logotype/color/pictelai.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Leapyear" src="https://www.untitledui.com/logos/logotype/color/leapyear.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Peregrin" src="https://www.untitledui.com/logos/logotype/color/peregrin.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Easytax" src="https://www.untitledui.com/logos/logotype/color/easytax.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="BuildingBlocks" src="/design-assets/logos/Default style/Light mode/BuildingBlocks.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Boltshift" src="/design-assets/logos/Default style/Light mode/Boltshift.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="FeatherDev" src="/design-assets/logos/Default style/Light mode/FeatherDev.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Lightbox" src="/design-assets/logos/Default style/Light mode/Lightbox.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Light mode/Capsule.svg" className="h-9 md:h-12 dark:hidden" />
                         <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/color/coreos.svg"
+                            alt="Hourglass"
+                            src="/design-assets/logos/Default style/Light mode/Hourglass.svg"
                             className="inline-flex h-9 md:hidden md:h-12 dark:hidden"
                         />
 
                         {/* Dark mode images (hidden in light mode) */}
                         <img
-                            alt="Catalog"
-                            src="https://www.untitledui.com/logos/logotype/white/catalog.svg"
+                            alt="BuildingBlocks"
+                            src="/design-assets/logos/Default style/Dark mode/BuildingBlocks.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Pictelai"
-                            src="https://www.untitledui.com/logos/logotype/white/pictelai.svg"
+                            alt="Boltshift"
+                            src="/design-assets/logos/Default style/Dark mode/Boltshift.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Leapyear"
-                            src="https://www.untitledui.com/logos/logotype/white/leapyear.svg"
+                            alt="FeatherDev"
+                            src="/design-assets/logos/Default style/Dark mode/FeatherDev.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Peregrin"
-                            src="https://www.untitledui.com/logos/logotype/white/peregrin.svg"
+                            alt="Lightbox"
+                            src="/design-assets/logos/Default style/Dark mode/Lightbox.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
+                        <img alt="Capsule" src="/design-assets/logos/Default style/Dark mode/Capsule.svg" className="h-9 opacity-85 not-dark:hidden md:h-12" />
                         <img
-                            alt="Easytax"
-                            src="https://www.untitledui.com/logos/logotype/white/easytax.svg"
-                            className="h-9 opacity-85 not-dark:hidden md:h-12"
-                        />
-                        <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/white/coreos.svg"
+                            alt="Hourglass"
+                            src="/design-assets/logos/Default style/Dark mode/Hourglass.svg"
                             className="inline-flex h-9 opacity-85 not-dark:hidden md:hidden md:h-12"
                         />
                     </div>
@@ -693,10 +672,12 @@ const CTACardHorizontalBrand = () => {
                 <div className="flex flex-col gap-x-8 gap-y-8 rounded-2xl bg-brand-section px-6 py-10 lg:flex-row lg:p-16">
                     <div className="flex max-w-3xl flex-1 flex-col">
                         <h2 className="text-display-sm font-semibold text-primary_on-brand">
-                            <span className="hidden md:inline">Start your 30-day free trial</span>
-                            <span className="md:hidden">Start your free trial</span>
+                            <span className="hidden md:inline">Start your sustainable project today</span>
+                            <span className="md:hidden">Start building green</span>
                         </h2>
-                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">Join over 4,000+ startups already growing with Untitled.</p>
+                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">
+                            Join over 200+ builders already constructing with EcoBuild's sustainable solutions.
+                        </p>
                     </div>
                     <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start">
                         <Button color="secondary" size="xl" className="shadow-xs! ring-0">
@@ -716,16 +697,19 @@ const FooterLarge08 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between gap-x-8 gap-y-12 lg:flex-row">
                     <div className="flex flex-col gap-8 md:items-start">
-                        <UntitledLogo className="h-8 w-min shrink-0" />
+                        <div className="flex items-center gap-2">
+                            <img alt="EcoBuild Construction" src="/design-assets/logos/Default style/Light mode/BuildingBlocks.svg" className="h-8 w-auto" />
+                            <span className="text-xl font-semibold text-primary">EcoBuild</span>
+                        </div>
                         <nav>
                             <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-[repeat(6,max-content)]">
                                 {[
-                                    { title: "Overview", href: "#" },
-                                    { title: "Features", href: "#" },
+                                    { title: "About", href: "#" },
+                                    { title: "Services", href: "#" },
                                     { title: "Pricing", href: "#" },
-                                    { title: "Careers", href: "#" },
-                                    { title: "Help", href: "#" },
-                                    { title: "Privacy", href: "#" },
+                                    { title: "Projects", href: "#" },
+                                    { title: "Contact", href: "#" },
+                                    { title: "Sustainability", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button color="link-gray" size="lg" href={item.href}>
@@ -746,7 +730,7 @@ const FooterLarge08 = () => {
                         className="flex w-full flex-col gap-4 sm:max-w-90"
                     >
                         <label htmlFor="newsletters-email" className="text-sm font-semibold text-primary">
-                            Stay up to date
+                            Stay updated on sustainable building
                         </label>
                         <div className="flex flex-col gap-4 sm:flex-row">
                             <Input
@@ -765,13 +749,13 @@ const FooterLarge08 = () => {
                     </Form>
                 </div>
                 <div className="mt-12 flex flex-col-reverse justify-between gap-4 border-t border-secondary pt-8 md:mt-16 md:flex-row md:gap-6">
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <p className="text-md text-quaternary">© 2024 EcoBuild Construction. All rights reserved.</p>
 
                     <ul className="flex gap-4">
                         {[
                             { title: "Terms", href: "#" },
                             { title: "Privacy", href: "#" },
-                            { title: "Cookies", href: "#" },
+                            { title: "Environmental Policy", href: "#" },
                         ].map(({ title, href }) => (
                             <li key={title}>
                                 <a href={href} className="text-md text-quaternary transition duration-100 ease-linear hover:text-tertiary">
@@ -786,7 +770,7 @@ const FooterLarge08 = () => {
     );
 };
 
-const LandingPage08 = () => {
+const EcoBuildV1 = () => {
     return (
         <div className="bg-primary">
             <HeroCardMockup05 />
@@ -812,4 +796,4 @@ const LandingPage08 = () => {
     );
 };
 
-export default LandingPage08;
+export default EcoBuildV1;

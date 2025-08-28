@@ -7,13 +7,63 @@ import { Button } from "@/components/base/buttons/button";
 import { Form } from "@/components/base/form/form";
 import { Input } from "@/components/base/input/input";
 import { FeaturedIcon } from "@/components/foundations/featured-icon/featured-icon";
-import { UntitledLogo } from "@/components/foundations/logo/untitledui-logo";
-import { Header } from "@/components/marketing/header-navigation/header";
 import { CreditCard } from "@/components/shared-assets/credit-card/credit-card";
 import { IPhoneMockup } from "@/components/shared-assets/iphone-mockup";
 import { SectionDivider } from "@/components/shared-assets/section-divider";
 import { cx } from "@/utils/cx";
 import "./theme.css";
+
+const CustomHeader = () => {
+    return (
+        <header className="relative flex h-18 w-full items-center justify-center md:h-20">
+            <div className="flex size-full max-w-container flex-1 items-center pr-3 pl-4 md:px-8">
+                <div className="flex w-full justify-between gap-4">
+                    <div className="flex flex-1 items-center gap-5">
+                        <div className="flex items-center gap-2">
+                            <img alt="Harvest & Table" src="/design-assets/logos/Default style/Light mode/Flora&Fauna.svg" className="h-8 w-auto dark:hidden" />
+                            <img
+                                alt="Harvest & Table"
+                                src="/design-assets/logos/Default style/Dark mode/Flora&Fauna.svg"
+                                className="h-8 w-auto opacity-85 not-dark:hidden"
+                            />
+                            <span className="text-xl font-semibold text-primary">Harvest & Table</span>
+                        </div>
+
+                        <nav className="max-md:hidden">
+                            <ul className="flex items-center gap-0.5">
+                                {[
+                                    { label: "Menu", href: "#menu" },
+                                    { label: "About", href: "#about" },
+                                    { label: "Reservations", href: "#reservations" },
+                                    { label: "Events", href: "#events" },
+                                    { label: "Contact", href: "#contact" },
+                                ].map((navItem) => (
+                                    <li key={navItem.label}>
+                                        <a
+                                            href={navItem.href}
+                                            className="flex cursor-pointer items-center gap-0.5 rounded-lg px-1.5 py-1 text-md font-semibold text-secondary outline-focus-ring transition duration-100 ease-linear hover:text-secondary_hover focus:outline-offset-2 focus-visible:outline-2"
+                                        >
+                                            <span className="px-0.5">{navItem.label}</span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div className="hidden items-center gap-3 md:flex">
+                        <Button color="secondary" size="lg">
+                            View Menu
+                        </Button>
+                        <Button color="primary" size="lg">
+                            Reserve Table
+                        </Button>
+                    </div>
+                </div>
+            </div>
+        </header>
+    );
+};
 
 const HeroCardMockup05 = () => {
     return (
@@ -34,7 +84,7 @@ const HeroCardMockup05 = () => {
                 className="pointer-events-none absolute top-0 left-1/2 z-0 max-w-none -translate-x-1/2 md:hidden dark:brightness-[0.2]"
             />
 
-            <Header />
+            <CustomHeader />
 
             <section className="relative overflow-hidden py-16 md:pt-24 md:pb-0">
                 <img
@@ -45,19 +95,20 @@ const HeroCardMockup05 = () => {
                 />
                 <div className="mx-auto w-full max-w-container px-4 md:px-8">
                     <div className="mx-auto flex max-w-3xl flex-col md:items-center md:text-center">
-                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Super. Simple. Banking.</span>
+                        <span className="text-sm font-semibold text-brand-secondary md:text-md">Farm. Fresh. Exceptional.</span>
 
                         <h1 className="mt-3 text-display-md font-semibold text-primary md:text-display-lg lg:text-display-2xl">
-                            Simple banking that works like magic.
+                            Farm-to-table dining that works like magic.
                         </h1>
                         <p className="mt-4 max-w-3xl text-lg text-balance text-tertiary md:mt-6 md:text-xl">
-                            Simple, transparent banking. No hidden fees and free overdrafts.
+                            Exceptional cuisine crafted from locally-sourced ingredients, supporting sustainable farming and delivering unforgettable dining
+                            experiences.
                         </p>
                         <div className="mt-8 flex w-full flex-col-reverse items-stretch gap-3 sm:w-auto sm:flex-row sm:items-start md:mt-12">
                             <Button iconLeading={PlayCircle} color="secondary" size="xl">
-                                Demo
+                                View Menu
                             </Button>
-                            <Button size="xl">Sign up</Button>
+                            <Button size="xl">Reserve Table</Button>
                         </div>
                     </div>
                 </div>
@@ -74,18 +125,26 @@ const HeroCardMockup05 = () => {
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="Phoenix Baker" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1591189863430-ab87e120f312?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="Fresh organic vegetables at farmers market"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                             <div
                                 className="[transform:var(--transform-mobile)] md:[transform:var(--transform-desktop)]"
                                 style={
                                     {
                                         "--transform-mobile": "scale(0.79) translate(-98px, -1px) rotate(30deg)",
-                                        "--transform-desktop": "scale(1.77) translate(5px, -11px)  rotate(30deg)",
+                                        "--transform-desktop": "scale(1.77) translate(5px, -11px) rotate(30deg)",
                                     } as React.CSSProperties
                                 }
                             >
-                                <CreditCard type="brand-dark" cardHolder="OLIVIA RHYE" />
+                                <img
+                                    src="https://images.unsplash.com/photo-1505692794401-b371fa865622?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400"
+                                    alt="Fresh farm vegetables and herbs"
+                                    className="h-48 w-80 rounded-lg object-cover shadow-lg"
+                                />
                             </div>
                         </div>
                     </div>
@@ -126,11 +185,12 @@ const IconsAndMockup08 = () => {
         <section className="overflow-hidden bg-primary py-16 md:py-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Fresh Philosophy</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The only card you'll ever need. Simple.</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">The only dining experience you'll ever need. Fresh.</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Spend smarter, lower your bills, get cashback on everything you buy, and unlock credit to grow your business.
+                        Taste the difference of truly fresh ingredients, support local farmers, savor exceptional flavors, and discover culinary artistry that
+                        celebrates the season.
                     </p>
                 </div>
 
@@ -138,20 +198,20 @@ const IconsAndMockup08 = () => {
                     <ul className="grid grid-cols-1 gap-x-8 gap-y-10 md:gap-y-12">
                         {[
                             {
-                                title: "Unlimited cards",
+                                title: "Local partnerships",
                                 subtitle:
-                                    "Give your team the autonomy they need with access to as many cards as they need. Authorise purchases with a click. Simple.",
+                                    "Direct relationships with local farmers and producers ensure the freshest ingredients arrive at your table within hours of harvest.",
                                 icon: MessageChatCircle,
                             },
                             {
-                                title: "Easy expense policies",
+                                title: "Seasonal menus",
                                 subtitle:
-                                    "Every card comes with configurable spending limits, purchase restrictions, and cancellations for each employee and team.",
+                                    "Our ever-changing menu celebrates the best of each season, featuring dishes that highlight the natural flavors of peak-ripeness ingredients.",
                                 icon: Zap,
                             },
                             {
-                                title: "Advanced analytics",
-                                subtitle: "An all-in-one platform that helps you balance everything your team need to be happy and your finances in order.",
+                                title: "Sustainable practices",
+                                subtitle: "Zero-waste cooking and sustainable sourcing practices that support both environmental health and exceptional taste.",
                                 icon: ChartBreakoutSquare,
                             },
                         ].map((item) => (
@@ -171,36 +231,11 @@ const IconsAndMockup08 = () => {
                     </ul>
 
                     <div className="relative -mx-4 flex h-80 items-center justify-center bg-linear-to-tr from-gray-800 to-gray-700 md:mr-0 md:h-120 lg:h-140">
-                        <div className="translate-x-[34px] translate-y-[3px] -space-y-[116.5px] md:translate-x-[45px] md:translate-y-[37px] md:-space-y-[83px]">
-                            <div className="relative z-3 translate-y-[22px] rotate-[29.9deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.1]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="lana steiner" />
-                                </div>
-                            </div>
-                            <div className="relative z-2 translate-y-[10px] rotate-[14.8deg]">
-                                <div
-                                    className="[--scale:1.365] md:[--scale:2.099]"
-                                    style={{
-                                        transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                    }}
-                                >
-                                    <CreditCard type="transparent-gradient" cardHolder="OLIVIA RHYE" />
-                                </div>
-                            </div>
-                            <div
-                                className="relative z-1 [--scale:1.365] md:[--scale:2.1]"
-                                style={{
-                                    transform: "scale(var(--scale)) rotateX(63deg) rotateY(1deg) rotateZ(51deg) skewX(14deg)",
-                                }}
-                            >
-                                <CreditCard type="transparent-gradient" cardHolder="Phoenix Baker" />
-                            </div>
-                        </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1626206613328-da4be4810a05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Chef preparing fresh farm-to-table cuisine"
+                            className="h-full w-full object-cover"
+                        />
                     </div>
                 </div>
             </div>
@@ -210,43 +245,37 @@ const IconsAndMockup08 = () => {
 
 const plans = [
     {
-        title: "Basic plan",
-        subtitle: "$10/mth",
-        description: "Billed annually.",
+        title: "Dinner Tasting",
+        subtitle: "$85/person",
+        description: "7-course experience.",
         features: [
-            "Access to all basic features",
-            "Basic reporting and analytics",
-            "Up to 10 individual users",
-            "20 GB individual data",
-            "Basic chat and email support",
+            "Chef's seasonal tasting menu",
+            "Wine pairing recommendations",
+            "Farm story with each course",
+            "Vegetarian options available",
+            "2.5 hour dining experience",
         ],
         hasCallout: true,
         icon: Zap,
     },
     {
-        title: "Business plan",
-        subtitle: "$20/mth",
-        description: "Billed annually.",
+        title: "Private Dining",
+        subtitle: "$150/person",
+        description: "Exclusive experience.",
         features: [
-            "200+ integrations",
-            "Advanced reporting and analytics",
-            "Up to 20 individual users",
-            "40 GB individual data",
-            "Priority chat and email support",
+            "Customized multi-course menu",
+            "Dedicated chef consultation",
+            "Private dining room access",
+            "Premium wine selection",
+            "Personal service team",
         ],
         icon: LayersTwo01,
     },
     {
-        title: "Enterprise plan",
-        subtitle: "$40/mth",
-        description: "Billed annually.",
-        features: [
-            "Advanced custom fields",
-            "Audit log and data history",
-            "Unlimited individual users",
-            "Unlimited individual data",
-            "Personalized + priority service",
-        ],
+        title: "Farm Experience",
+        subtitle: "$250/person",
+        description: "Full day package.",
+        features: ["Morning farm tour", "Hands-on cooking class", "Multi-course farm lunch", "Take-home ingredients", "Chef's cookbook included"],
         icon: LayersThree01,
     },
 ];
@@ -357,7 +386,7 @@ const PricingTierCardCallout = (props: {
             </ul>
 
             <div className="mt-auto flex flex-col gap-3 px-6 pb-8 md:px-8">
-                <Button size="xl">Get started</Button>
+                <Button size="xl">Reserve now</Button>
                 {props.secondAction && (
                     <Button color="secondary" size="xl">
                         {props.secondAction}
@@ -373,10 +402,10 @@ const PricingSectionSimpleCards02 = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex w-full max-w-3xl flex-col">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Pricing</span>
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Simple, transparent pricing</h2>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Experiences</span>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">Simple, memorable experiences</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        We believe Untitled should be accessible to all companies, no matter the size.
+                        We believe exceptional dining should be accessible to all food lovers, no matter the occasion.
                     </p>
                 </div>
 
@@ -421,19 +450,20 @@ const FeaturesSimpleIcons01 = () => {
                 <ul className="grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 md:gap-y-16 lg:grid-cols-3">
                     {[
                         {
-                            title: "Share team inboxes",
-                            subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+                            title: "Fresh ingredients daily",
+                            subtitle: "We source the freshest ingredients every morning from our network of local farms and trusted producers.",
                             icon: MessageChatCircle,
                         },
                         {
-                            title: "Deliver instant answers",
-                            subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+                            title: "Seasonal menu rotation",
+                            subtitle:
+                                "Our menu changes with the seasons to showcase the best flavors at their peak, ensuring every visit brings new discoveries.",
                             icon: Zap,
                         },
                         {
-                            title: "Manage your team with reports",
+                            title: "Farm partnership stories",
                             subtitle:
-                                "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                                "Learn about the passionate farmers and producers behind each dish through detailed stories that connect you to your food's journey.",
                             icon: ChartBreakoutSquare,
                         },
                     ].map((item) => (
@@ -477,11 +507,11 @@ const FeaturesTabsMockup09 = () => {
         <section className="overflow-hidden bg-primary pt-16 lg:pt-24">
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="flex w-full flex-col lg:max-w-3xl">
-                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Features</span>
+                    <span className="text-sm font-semibold text-brand-secondary md:text-md">Farm Connections</span>
 
-                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one finance for any business</h2>
+                    <h2 className="mt-3 text-display-sm font-semibold text-primary md:text-display-md">All-in-one farm-to-table for any occasion</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Get a deposit account, credit card, and spend management software—in one refreshingly easy solution. No fees or minimums.{" "}
+                        Get fresh ingredients, seasonal menus, and exceptional service—in one complete culinary experience that celebrates local agriculture.
                     </p>
                 </div>
 
@@ -489,17 +519,16 @@ const FeaturesTabsMockup09 = () => {
                     <ul className="flex flex-col">
                         {[
                             {
-                                title: "Share team inboxes",
-                                subtitle: "Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.",
+                                title: "Local farm partnerships",
+                                subtitle: "Direct relationships with over 20 local farms ensure the freshest ingredients arrive daily at our kitchen.",
                             },
                             {
-                                title: "Deliver instant answers",
-                                subtitle: "An all-in-one customer service platform that helps you balance everything your customers need to be happy.",
+                                title: "Seasonal menu curation",
+                                subtitle: "Our chefs work closely with farmers to design menus that celebrate the best of each season's harvest.",
                             },
                             {
-                                title: "Manage your team with reports",
-                                subtitle:
-                                    "Measure what matters with Untitled's easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.",
+                                title: "Sustainable practices",
+                                subtitle: "Zero-waste cooking, composting programs, and sustainable sourcing practices that support environmental health.",
                             },
                         ].map((item, index) => (
                             <li key={item.title} onClick={() => setCurrentTab(index)}>
@@ -518,15 +547,10 @@ const FeaturesTabsMockup09 = () => {
                     </ul>
 
                     <div className="relative flex h-90 w-full justify-center md:h-120 lg:-ml-4 lg:h-140 lg:overflow-y-clip">
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="absolute top-16 left-1/2 hidden w-78.5 -translate-x-3/4 drop-shadow-iphone-mockup md:block lg:left-0 lg:translate-x-0"
-                        />
-                        <IPhoneMockup
-                            image="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-light-01.webp"
-                            imageDark="https://www.untitledui.com/marketing/screen-mockups/dashboard-mobile-mockup-dark-01.webp"
-                            className="h-[579px] w-71 drop-shadow-iphone-mockup md:absolute md:top-0 md:right-1/2 md:h-160 md:w-78.5 md:translate-x-2/3 lg:right-0 lg:translate-x-0"
+                        <img
+                            src="https://images.unsplash.com/photo-1575218823251-f9d243b6f720?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600"
+                            alt="Urban garden with fresh vegetables and herbs"
+                            className="h-full w-full rounded-lg object-cover shadow-xl"
                         />
                     </div>
                 </div>
@@ -562,16 +586,15 @@ const FeaturesIntegrationsIcons03 = () => {
             <div className="mx-auto w-full max-w-container px-4 md:px-8">
                 <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center">
                     <Badge size="md" type="pill-color" color="brand" className="inline-flex md:hidden">
-                        Integrations
+                        Farm Partners
                     </Badge>
                     <Badge size="lg" type="pill-color" color="brand" className="hidden md:inline-flex">
-                        Integrations
+                        Farm Partners
                     </Badge>
 
-                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Get more value from your tools</h2>
+                    <h2 className="mt-4 text-display-sm font-semibold text-primary md:text-display-md">Trusted local growers</h2>
                     <p className="mt-4 text-lg text-tertiary md:mt-5 md:text-xl">
-                        Connect your tools, connect your teams. With over 100 apps already available in our directory, your team's favorite tools are just a
-                        click away.
+                        Partner with the finest local farms and artisan producers who share our commitment to quality and sustainability.
                     </p>
                 </div>
 
@@ -579,34 +602,34 @@ const FeaturesIntegrationsIcons03 = () => {
                     <ul className="lg:grid-y-16 grid w-full grid-cols-1 justify-items-center gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-y-16">
                         {[
                             {
-                                title: "Notion integration",
-                                subtitle: "Work faster and smarter by integrating directly with Notion, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/notion.svg",
+                                title: "Sunrise Valley Farm",
+                                subtitle: "Organic vegetables and herbs grown using sustainable farming practices for over 30 years.",
+                                logo: "/design-assets/logos/Default style/Light mode/Flora&Fauna.svg",
                             },
                             {
-                                title: "Slack integration",
-                                subtitle: "Work faster and smarter by integrating directly with Slack, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/slack.svg",
+                                title: "Mountain View Dairy",
+                                subtitle: "Grass-fed dairy products from happy cows in the beautiful mountain pastures.",
+                                logo: "/design-assets/logos/Default style/Light mode/Goodwell.svg",
                             },
                             {
-                                title: "Google Drive integration",
-                                subtitle: "Work faster and smarter by integrating directly with Google, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/google_drive.svg",
+                                title: "Heritage Grain Co",
+                                subtitle: "Ancient grains and specialty flours milled fresh from heirloom wheat varieties.",
+                                logo: "/design-assets/logos/Default style/Light mode/Luminary.svg",
                             },
                             {
-                                title: "Intercom integration",
-                                subtitle: "Work faster and smarter by integrating directly with Intercom, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/intercom.svg",
+                                title: "Ocean Breeze Seafood",
+                                subtitle: "Sustainably caught seafood delivered fresh daily from coastal waters.",
+                                logo: "/design-assets/logos/Default style/Light mode/Magnolia.svg",
                             },
                             {
-                                title: "Jira integration",
-                                subtitle: "Work faster and smarter by integrating directly with Jira, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/jira.svg",
+                                title: "Wildflower Apiaries",
+                                subtitle: "Pure local honey and bee products from pesticide-free wildflower meadows.",
+                                logo: "/design-assets/logos/Default style/Light mode/Wildcrafted.svg",
                             },
                             {
-                                title: "Dropbox integration",
-                                subtitle: "Work faster and smarter by integrating directly with Dropbox, right in the app.",
-                                logo: "https://www.untitledui.com/logos/integrations/dropbox.svg",
+                                title: "Artisan Orchards",
+                                subtitle: "Tree-ripened fruits and seasonal preserves made using traditional methods.",
+                                logo: "/design-assets/logos/Default style/Light mode/Renaissance.svg",
                             },
                         ].map((item) => (
                             <li key={item.title}>
@@ -616,7 +639,7 @@ const FeaturesIntegrationsIcons03 = () => {
                                     subtitle={item.subtitle}
                                     footer={
                                         <Button color="link-color" size="lg" href="#" iconTrailing={ArrowRight}>
-                                            View integration
+                                            Visit farm
                                         </Button>
                                     }
                                 />
@@ -634,49 +657,49 @@ const SocialProofCard = () => {
         <section className="bg-primary pb-16 md:pb-24">
             <div className="mx-auto max-w-container md:px-8">
                 <div className="flex flex-col gap-8 bg-secondary px-6 py-12 md:rounded-2xl md:p-16">
-                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Trusted by 4,000+ companies</p>
+                    <p className="text-center text-md font-medium text-tertiary md:text-xl">Featured in 50+ local publications</p>
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 xl:gap-x-8">
                         {/* Light mode images (hidden in dark mode) */}
-                        <img alt="Catalog" src="https://www.untitledui.com/logos/logotype/color/catalog.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Pictelai" src="https://www.untitledui.com/logos/logotype/color/pictelai.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Leapyear" src="https://www.untitledui.com/logos/logotype/color/leapyear.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Peregrin" src="https://www.untitledui.com/logos/logotype/color/peregrin.svg" className="h-9 md:h-12 dark:hidden" />
-                        <img alt="Easytax" src="https://www.untitledui.com/logos/logotype/color/easytax.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Flora&Fauna" src="/design-assets/logos/Default style/Light mode/Flora&Fauna.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Goodwell" src="/design-assets/logos/Default style/Light mode/Goodwell.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Luminary" src="/design-assets/logos/Default style/Light mode/Luminary.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Magnolia" src="/design-assets/logos/Default style/Light mode/Magnolia.svg" className="h-9 md:h-12 dark:hidden" />
+                        <img alt="Wildcrafted" src="/design-assets/logos/Default style/Light mode/Wildcrafted.svg" className="h-9 md:h-12 dark:hidden" />
                         <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/color/coreos.svg"
+                            alt="Renaissance"
+                            src="/design-assets/logos/Default style/Light mode/Renaissance.svg"
                             className="inline-flex h-9 md:hidden md:h-12 dark:hidden"
                         />
 
                         {/* Dark mode images (hidden in light mode) */}
                         <img
-                            alt="Catalog"
-                            src="https://www.untitledui.com/logos/logotype/white/catalog.svg"
+                            alt="Flora&Fauna"
+                            src="/design-assets/logos/Default style/Dark mode/Flora&Fauna.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Pictelai"
-                            src="https://www.untitledui.com/logos/logotype/white/pictelai.svg"
+                            alt="Goodwell"
+                            src="/design-assets/logos/Default style/Dark mode/Goodwell.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Leapyear"
-                            src="https://www.untitledui.com/logos/logotype/white/leapyear.svg"
+                            alt="Luminary"
+                            src="/design-assets/logos/Default style/Dark mode/Luminary.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Peregrin"
-                            src="https://www.untitledui.com/logos/logotype/white/peregrin.svg"
+                            alt="Magnolia"
+                            src="/design-assets/logos/Default style/Dark mode/Magnolia.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Easytax"
-                            src="https://www.untitledui.com/logos/logotype/white/easytax.svg"
+                            alt="Wildcrafted"
+                            src="/design-assets/logos/Default style/Dark mode/Wildcrafted.svg"
                             className="h-9 opacity-85 not-dark:hidden md:h-12"
                         />
                         <img
-                            alt="Coreos"
-                            src="https://www.untitledui.com/logos/logotype/white/coreos.svg"
+                            alt="Renaissance"
+                            src="/design-assets/logos/Default style/Dark mode/Renaissance.svg"
                             className="inline-flex h-9 opacity-85 not-dark:hidden md:hidden md:h-12"
                         />
                     </div>
@@ -693,16 +716,18 @@ const CTACardHorizontalBrand = () => {
                 <div className="flex flex-col gap-x-8 gap-y-8 rounded-2xl bg-brand-section px-6 py-10 lg:flex-row lg:p-16">
                     <div className="flex max-w-3xl flex-1 flex-col">
                         <h2 className="text-display-sm font-semibold text-primary_on-brand">
-                            <span className="hidden md:inline">Start your 30-day free trial</span>
-                            <span className="md:hidden">Start your free trial</span>
+                            <span className="hidden md:inline">Experience farm-fresh dining today</span>
+                            <span className="md:hidden">Taste the difference</span>
                         </h2>
-                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">Join over 4,000+ startups already growing with Untitled.</p>
+                        <p className="mt-4 text-lg text-tertiary_on-brand lg:text-xl">
+                            Join 5,000+ diners who have discovered the magic of truly fresh, locally-sourced cuisine.
+                        </p>
                     </div>
                     <div className="flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-start">
                         <Button color="secondary" size="xl" className="shadow-xs! ring-0">
-                            Learn more
+                            View menu
                         </Button>
-                        <Button size="xl">Get started</Button>
+                        <Button size="xl">Reserve table</Button>
                     </div>
                 </div>
             </div>
@@ -716,16 +741,19 @@ const FooterLarge08 = () => {
             <div className="mx-auto max-w-container px-4 md:px-8">
                 <div className="flex flex-col justify-between gap-x-8 gap-y-12 lg:flex-row">
                     <div className="flex flex-col gap-8 md:items-start">
-                        <UntitledLogo className="h-8 w-min shrink-0" />
+                        <div className="flex items-center gap-2">
+                            <img alt="Harvest & Table" src="/design-assets/logos/Default style/Light mode/Flora&Fauna.svg" className="h-8 w-auto" />
+                            <span className="text-xl font-semibold text-primary">Harvest & Table</span>
+                        </div>
                         <nav>
                             <ul className="grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-[repeat(6,max-content)]">
                                 {[
-                                    { title: "Overview", href: "#" },
-                                    { title: "Features", href: "#" },
-                                    { title: "Pricing", href: "#" },
-                                    { title: "Careers", href: "#" },
-                                    { title: "Help", href: "#" },
-                                    { title: "Privacy", href: "#" },
+                                    { title: "Menu", href: "#" },
+                                    { title: "Reservations", href: "#" },
+                                    { title: "Events", href: "#" },
+                                    { title: "Our Farms", href: "#" },
+                                    { title: "Contact", href: "#" },
+                                    { title: "Catering", href: "#" },
                                 ].map((item) => (
                                     <li key={item.title}>
                                         <Button color="link-gray" size="lg" href={item.href}>
@@ -746,7 +774,7 @@ const FooterLarge08 = () => {
                         className="flex w-full flex-col gap-4 sm:max-w-90"
                     >
                         <label htmlFor="newsletters-email" className="text-sm font-semibold text-primary">
-                            Stay up to date
+                            Stay fresh with seasonal updates
                         </label>
                         <div className="flex flex-col gap-4 sm:flex-row">
                             <Input
@@ -765,13 +793,13 @@ const FooterLarge08 = () => {
                     </Form>
                 </div>
                 <div className="mt-12 flex flex-col-reverse justify-between gap-4 border-t border-secondary pt-8 md:mt-16 md:flex-row md:gap-6">
-                    <p className="text-md text-quaternary">© 2077 Untitled UI. All rights reserved.</p>
+                    <p className="text-md text-quaternary">© 2024 Harvest & Table. All rights reserved.</p>
 
                     <ul className="flex gap-4">
                         {[
                             { title: "Terms", href: "#" },
                             { title: "Privacy", href: "#" },
-                            { title: "Cookies", href: "#" },
+                            { title: "Sustainability", href: "#" },
                         ].map(({ title, href }) => (
                             <li key={title}>
                                 <a href={href} className="text-md text-quaternary transition duration-100 ease-linear hover:text-tertiary">
@@ -786,7 +814,7 @@ const FooterLarge08 = () => {
     );
 };
 
-const LandingPage08 = () => {
+const HarvestTableV1 = () => {
     return (
         <div className="bg-primary">
             <HeroCardMockup05 />
@@ -812,4 +840,4 @@ const LandingPage08 = () => {
     );
 };
 
-export default LandingPage08;
+export default HarvestTableV1;

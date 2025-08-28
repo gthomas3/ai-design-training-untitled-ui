@@ -200,7 +200,7 @@ const logos = [
     },
 ];
 
-export const SocialProofFullWidthMasked = () => {
+const SocialProofFullWidthMasked = () => {
     return (
         <section className="overflow-hidden bg-primary_alt py-16 md:py-24">
             <div className="mx-auto max-w-container px-4 md:px-8">
